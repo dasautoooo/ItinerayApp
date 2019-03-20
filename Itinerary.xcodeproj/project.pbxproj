@@ -15,6 +15,11 @@
 		D714BB7E22410D1B0097E20F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714BB7D22410D1B0097E20F /* Data.swift */; };
 		D714BB82224111110097E20F /* TripsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D714BB81224111110097E20F /* TripsViewController.storyboard */; };
 		D714BB84224111290097E20F /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714BB83224111290097E20F /* TripsViewController.swift */; };
+		D714BB862241195E0097E20F /* TripsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714BB852241195E0097E20F /* TripsTableViewCell.swift */; };
+		D714BB89224264AD0097E20F /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714BB88224264AD0097E20F /* UIViewExtensions.swift */; };
+		D714BB8C224267950097E20F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714BB8B224267950097E20F /* Theme.swift */; };
+		D714BB8E2242686D0097E20F /* FugazOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D714BB8D2242686D0097E20F /* FugazOne-Regular.ttf */; };
+		D714BB9022426B040097E20F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D714BB8F22426B040097E20F /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		D714BB7D22410D1B0097E20F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		D714BB81224111110097E20F /* TripsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TripsViewController.storyboard; sourceTree = "<group>"; };
 		D714BB83224111290097E20F /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
+		D714BB852241195E0097E20F /* TripsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsTableViewCell.swift; sourceTree = "<group>"; };
+		D714BB88224264AD0097E20F /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		D714BB8B224267950097E20F /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		D714BB8D2242686D0097E20F /* FugazOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FugazOne-Regular.ttf"; sourceTree = "<group>"; };
+		D714BB8F22426B040097E20F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,8 @@
 		D714BB64223E7B4E0097E20F /* Itinerary */ = {
 			isa = PBXGroup;
 			children = (
+				D714BB8A224267810097E20F /* Resources */,
+				D714BB87224264810097E20F /* Extensions */,
 				D714BB77224108F40097E20F /* Model */,
 				D714BB7F224110D60097E20F /* Views */,
 				D714BB65223E7B4E0097E20F /* AppDelegate.swift */,
@@ -101,8 +113,27 @@
 			children = (
 				D714BB81224111110097E20F /* TripsViewController.storyboard */,
 				D714BB83224111290097E20F /* TripsViewController.swift */,
+				D714BB852241195E0097E20F /* TripsTableViewCell.swift */,
 			);
 			path = TripsViewController;
+			sourceTree = "<group>";
+		};
+		D714BB87224264810097E20F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D714BB88224264AD0097E20F /* UIViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D714BB8A224267810097E20F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D714BB8B224267950097E20F /* Theme.swift */,
+				D714BB8D2242686D0097E20F /* FugazOne-Regular.ttf */,
+				D714BB8F22426B040097E20F /* Colors.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,8 +194,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D714BB9022426B040097E20F /* Colors.xcassets in Resources */,
 				D714BB70223E7B510097E20F /* LaunchScreen.storyboard in Resources */,
 				D714BB82224111110097E20F /* TripsViewController.storyboard in Resources */,
+				D714BB8E2242686D0097E20F /* FugazOne-Regular.ttf in Resources */,
 				D714BB6D223E7B510097E20F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,6 +209,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D714BB862241195E0097E20F /* TripsTableViewCell.swift in Sources */,
+				D714BB8C224267950097E20F /* Theme.swift in Sources */,
+				D714BB89224264AD0097E20F /* UIViewExtensions.swift in Sources */,
 				D714BB7A224109110097E20F /* TripModel.swift in Sources */,
 				D714BB66223E7B4E0097E20F /* AppDelegate.swift in Sources */,
 				D714BB7C2241091B0097E20F /* TripFunctions.swift in Sources */,
