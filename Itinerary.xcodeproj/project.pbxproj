@@ -20,6 +20,7 @@
 		D714BB8C224267950097E20F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D714BB8B224267950097E20F /* Theme.swift */; };
 		D714BB8E2242686D0097E20F /* FugazOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D714BB8D2242686D0097E20F /* FugazOne-Regular.ttf */; };
 		D714BB9022426B040097E20F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D714BB8F22426B040097E20F /* Colors.xcassets */; };
+		D715147E2243AE9000111542 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D715147D2243AE9000111542 /* UIButtonExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		D714BB8B224267950097E20F /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		D714BB8D2242686D0097E20F /* FugazOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FugazOne-Regular.ttf"; sourceTree = "<group>"; };
 		D714BB8F22426B040097E20F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		D715147D2243AE9000111542 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				D714BB88224264AD0097E20F /* UIViewExtensions.swift */,
+				D715147D2243AE9000111542 /* UIButtonExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				D714BB7A224109110097E20F /* TripModel.swift in Sources */,
 				D714BB66223E7B4E0097E20F /* AppDelegate.swift in Sources */,
 				D714BB7C2241091B0097E20F /* TripFunctions.swift in Sources */,
+				D715147E2243AE9000111542 /* UIButtonExtensions.swift in Sources */,
 				D714BB7E22410D1B0097E20F /* Data.swift in Sources */,
 				D714BB84224111290097E20F /* TripsViewController.swift in Sources */,
 			);
