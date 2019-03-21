@@ -58,6 +58,9 @@
                                 <rect key="frame" x="303" y="721" width="56" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <state key="normal" image="FloatingActionButtonPlus"/>
+                                <connections>
+                                    <segue destination="JwU-ot-t1M" kind="presentation" id="jST-vV-OG0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -71,6 +74,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WML-YD-b2Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="597.60000000000002" y="243.32833583208398"/>
+        </scene>
+        <!--AddTripViewController-->
+        <scene sceneID="adJ-HR-ODT">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddTripViewController" id="JwU-ot-t1M" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BB2-gi-zdP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1358" y="243"/>
         </scene>
     </scenes>
     <resources>
