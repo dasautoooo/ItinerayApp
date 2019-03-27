@@ -38,6 +38,7 @@ class TripsViewController: UIViewController {
                 self?.tableView.reloadData()
             }
         }
+        tripIndexToEdit = nil
     }
 }
 
