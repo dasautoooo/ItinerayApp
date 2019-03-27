@@ -22,6 +22,10 @@
                                 <rect key="frame" x="16" y="44" width="343" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gTO-r7-iA4">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="157"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Trip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inb-bn-Clb">
                                         <rect key="frame" x="8" y="18" width="327" height="32"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -29,6 +33,13 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Trip Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="94x-xl-k57">
+                                        <rect key="frame" x="10" y="58" width="322" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZbR-bg-OPk" customClass="AppUIButton" customModule="Itinerary" customModuleProvider="target">
                                         <rect key="frame" x="8" y="105" width="100" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -45,13 +56,14 @@
                                             <action selector="save:" destination="VWI-KN-Cbw" eventType="touchUpInside" id="Dfl-WB-PYJ"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Trip Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="94x-xl-k57">
-                                        <rect key="frame" x="10" y="58" width="322" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVZ-Rh-c0U">
+                                        <rect key="frame" x="269" y="18" width="60" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Camera"/>
+                                        <connections>
+                                            <action selector="addPhoto:" destination="VWI-KN-Cbw" eventType="touchUpInside" id="n2h-6W-W8I"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -61,6 +73,7 @@
                     </view>
                     <connections>
                         <outlet property="cancelButton" destination="ZbR-bg-OPk" id="k6R-c0-Xue"/>
+                        <outlet property="imageView" destination="gTO-r7-iA4" id="byU-vb-bx2"/>
                         <outlet property="saveButton" destination="ejQ-0u-taq" id="hdp-7h-OXn"/>
                         <outlet property="titleLabel" destination="inb-bn-Clb" id="DJs-Ya-iJk"/>
                         <outlet property="tripTextField" destination="94x-xl-k57" id="vvy-aK-AD3"/>
@@ -71,4 +84,8 @@
             <point key="canvasLocation" x="1357.5999999999999" y="242.36453201970446"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Camera" width="22.5" height="22.5"/>
+    </resources>
+    <color key="tintColor" name="Tint"/>
 </document>
